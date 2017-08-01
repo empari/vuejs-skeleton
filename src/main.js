@@ -5,6 +5,7 @@ import { sync } from 'vuex-router-sync'
 import store from '@plugins/store'
 import router from '@plugins/router'
 import httpPlugin from '@plugins/http'
+import App from './App.vue'
 
 Vue.config.productionTip = false
 
@@ -18,5 +19,5 @@ new Vue({
   store,
   router,
   el: '#app',
-  render: h => h()
+  render: h => h(App)
 })

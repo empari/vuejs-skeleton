@@ -22,7 +22,7 @@
 
       <!-- buttons row -->
       <div class="tim-row" id="buttons-row">
-
+        <h1>Documentation Material kit EGI</h1>
         <h2>Buttons</h2>
         <legend></legend>
         <h4>Colors</h4>

@@ -25,7 +25,8 @@ module.exports = {
       '@': resolve('src'),
       '@app': resolve('src/app'),
       '@domains': resolve('src/app/domains'),
-      '@plugins': resolve('src/app/plugins')
+      '@plugins': resolve('src/app/plugins'),
+      '@configs': resolve('src/app/configs'),
     }
   },
   module: {

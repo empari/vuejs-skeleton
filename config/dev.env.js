@@ -4,5 +4,6 @@ var prodEnv = require('./prod.env')
 module.exports = merge(prodEnv, {
   NODE_ENV: '"development"',
   VERSION: '"0.1.0-dev"',
-  APP_NAME: '"CORE-dev"'
+  APP_NAME: '"CORE-dev"',
+  BASE_URL: '"http://pokeapi.co/api/v2/"'
 })

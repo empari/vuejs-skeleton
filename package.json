@@ -1,9 +1,7 @@
 {
-  "name": "vuejs-skeleton",
-  "version": "1.0.0",
+  "name": "empari-vuejs-skeleton",
+  "version": "0.1.0",
   "description": "Skeleton for projects front-end #EGI",
-  "author": "Team Empari <suporte@empari.com.br>",
-  "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
     "start": "node build/dev-server.js",
@@ -65,5 +63,8 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "homepage": "https://github.com/empari/vuejs-skeleton",
+  "author": "empari_ <suporte@empari.com.br>",
+  "license": "MIT"
 }

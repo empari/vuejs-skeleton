@@ -2,10 +2,11 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import afterEach from './AfterEach'
 import beforeEach from './BeforeEach'
+import { routes as app } from '@/app/domains'
 
 Vue.use(VueRouter)
 
-const routes = []
+const routes = [...app]
 
 const router = new VueRouter({
   routes,

@@ -12,7 +12,7 @@
     "axios": "^0.16.2",
     "bootstrap": "^3.3.7",
     "bootstrap-datepicker": "^1.7.1",
-    "empari-material-kit": "^1.0.1",
+    "empari-material-kit": "^1.0.2",
     "jquery": "^3.2.1",
     "vue": "^2.3.3",
     "vue-router": "^2.7.0",

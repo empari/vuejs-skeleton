@@ -9,6 +9,8 @@
             <h4 class="modal-title" id="myModalLabel">Modal title</h4>
           </div>
           <div class="modal-body">
+            <i class="material-icons">local_phone</i>
+            <i class="material-icons">&#xE551;</i>
             Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
           </div>
           <div class="modal-footer">
@@ -22,7 +24,7 @@
 
       <!-- buttons row -->
       <div class="tim-row" id="buttons-row">
-        <h1>Documentation Material kit EGI</h1>
+
         <h2>Buttons</h2>
         <legend></legend>
         <h4>Colors</h4>
@@ -30,8 +32,18 @@
           <button class="btn btn-primary">Primary</button>
           <button class="btn btn-default">Default</button>
           <button class="btn btn-white">White</button>
-        <div style="    background: #4a148c;    padding: 20px;">
+        <div style="    background: #451C7D;    padding: 20px;">
           <button class="btn btn-default-inverse">Default inverse</button>
+
+        </div>
+        </p>
+        <h2>Buttons Disabled</h2>
+        <p>
+          <button disabled class="btn btn-primary">Primary</button>
+          <button disabled class="btn btn-default">Default</button>
+          <button disabled class="btn btn-white">White</button>
+        <div style="    background: #451C7D;    padding: 20px;">
+          <button disabled class="btn btn-default-inverse">Default inverse</button>
 
         </div>
         </p>
@@ -284,7 +296,7 @@
 
         <div class="row">
           <div class="col-md-3 dropdown">
-            <a href="#" class="btn btn-simple dropdown-toggle" data-toggle="dropdown">
+            <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
               Regular
               <b class="caret"></b>
             </a>
@@ -304,7 +316,7 @@
 
         <pre class="prettyprint">
 &lt;div class=&quot;col-md-3 dropdown&quot;&gt;
-	&lt;a href=&quot;#&quot; class=&quot;btn btn-simple dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;btn btn-default dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;
     	Regular
     	&lt;b class=&quot;caret&quot;&gt;&lt;/b&gt;
 	&lt;/a&gt;
@@ -327,10 +339,57 @@
         <h2>Inputs </h2>
         <legend></legend>
 
-        <p>
-          We restyled the Bootstrap input to give it a more flat, minimal look. You can use
-          them with regular labels, floating labels and states or input groups.
-        </p>
+        <div class="row">
+          <div class="col-sm-6">
+            <form action="">
+              <div class="form-group label-floating">
+                <label class="control-label">Nome</label>
+                <input required type="text" value="" class="form-control"/>
+                <label class="help-block">Exemplo: Sonsa Stark</label>
+              </div>
+              <div class="form-group label-floating">
+                <label class="control-label">E-mail</label>
+                <input required type="email" value=""  class="form-control"/>
+                <span class="material-icons form-control-feedback">clear</span>
+              </div>
+              <div class="form-group label-floating">
+                <label class="control-label">Senha</label>
+                <input required type="password" value="" class="form-control" minlength="8" />
+                <label class="help-block">Min. 8 Caracteres</label>
+                <span class="material-icons form-control-feedback">clear</span>
+              </div>
+              <div class="form-group float-left">
+                <button type="submit" class="btn btn-default">Enviar</button>
+              </div>
+
+
+            </form>
+          </div>
+          <div class="col-sm-6" style="background: #451C7D; padding-top: 15px; padding-bottom: 15px;">
+            <form class="inverse" action="">
+              <div class="form-group label-floating">
+                <label class="control-label">Nome</label>
+                <input required type="text" value="" class="form-control" autocomplete="off"/>
+                <label class="help-block">Exemplo: Sonsa Stark</label>
+              </div>
+              <div class="form-group label-floating">
+                <label class="control-label">E-mail</label>
+                <input required type="email" value=""  class="form-control"/>
+                <span class="material-icons form-control-feedback">clear</span>
+              </div>
+              <div class="form-group label-floating">
+                <label class="control-label">Senha</label>
+                <input required type="password" value="" class="form-control" minlength="8" />
+                <label class="help-block">Min. 8 Caracteres</label>
+                <span class="material-icons form-control-feedback">clear</span>
+              </div>
+              <div class="form-group float-left">
+                <button type="submit" class="btn btn-default-inverse">Enviar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
         <div class="row">
           <div class="col-sm-4">
             <div class="form-group">

@@ -1,6 +1,6 @@
 <template>
   <div>
-    {{ pokemon.name }}
+    {{ pokemon }}
   </div>
 </template>
 
@@ -14,18 +14,14 @@
     },
     methods: {
       getPokemon () {
-        this.pokemon = this.$http.get('/pokemon/2').then((response) => {
-          return response
+        this.$http.get('/pokemon/2').then((response) => {
+          console.log(response.data)
+          this.pokemon = response.data
         })
-
-        console.log(this.$http.get('/pokemon/4').then((response) => {
-          return response
-        }))
       }
     },
     mounted () {
       this.getPokemon()
-      console.log(this.getPokemon())
     }
   }
 </script>

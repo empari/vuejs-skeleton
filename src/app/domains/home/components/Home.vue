@@ -4,7 +4,32 @@
     <div class="text-center">
       <p>A new generation apps by <a href="http://www.empari.com.br">Empari Global Innovation</a></p>
       <h3>Essencial links</h3>
-      <router-link :to="{ name: 'home.documentation-ux' }">Documentation UX</router-link>
+
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios">
+          Radio is off
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" checked="true">
+          Radio is on
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadiosDisabled" disabled>
+          Disabled Radio is off
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadiosDisabled" checked="true" disabled>
+          Disabled Radio is on
+        </label>
+      </div>
+
     </div>
   </div>
 </template>
@@ -18,6 +43,9 @@ export default {
     return {
       app
     }
+  },
+  created () {
+    window.$.material.init()
   }
 }
 </script>

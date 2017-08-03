@@ -6,6 +6,8 @@ import store from '@plugins/store'
 import router from '@plugins/router'
 import httpPlugin from '@plugins/http'
 import Main from '@domains/core/components/Main'
+// import App from './App.vue'
+// import App from '@domains/core/components/Main'
 
 Vue.config.productionTip = false
 

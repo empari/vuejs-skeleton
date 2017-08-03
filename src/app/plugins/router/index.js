@@ -8,6 +8,12 @@ Vue.use(VueRouter)
 
 const routes = [...app]
 
+// import { routes as app } from '@/app/domains'
+
+Vue.use(VueRouter)
+
+// const routes = [...app]
+
 const router = new VueRouter({
   routes,
   linkActiveClass: 'active',

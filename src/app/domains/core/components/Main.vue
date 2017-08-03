@@ -6,7 +6,7 @@
         <p class="text-muted text-center">
           {{ app.name }} &copy; {{ now.getFullYear() }} -
           <small>
-            Desenvolvido com <i class="material-icons" style="font-size: 14px;">favorite</i> por
+            Desenvolvido com <i class="material-icons" style="font-size: 14px; color: red">favorite</i> por
             <a href="http://www.empari.com.br" target="_blank">Empari Global Innovation</a>.
           </small>
         </p>

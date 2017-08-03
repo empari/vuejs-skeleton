@@ -1177,7 +1177,7 @@
             <code>.slider-warning</code>, <code>.slider-danger</code>, . Check also <a
               href="http://refreshless.com/nouislider/" target="_blank">noUISlider Full
               Documentation</a>.</p>
-
+              {{ sliderTotal }}
           <div id="sliderRegular" class="slider"></div>
           <br/>
           <div id="sliderDouble" class="slider slider-info"></div>
@@ -1647,15 +1647,28 @@ $(&#39;[data-toggle=&quot;popover&quot;]&#39;).popover();
 </template>
 
 <script>
-  export default {
-    name: 'DocumentationEGIUI',
-    mounted () {
-      window.$('.datepicker').datepicker({
-        format: 'dd/mm/yyyy'
-      })
-//      window.$.material.init()
+import initMaterial from '@plugins/material'
+
+export default {
+  name: 'DocumentationEGIUI',
+  data () {
+    return {
+      sliderTotal: 0
     }
+  },
+  mounted () {
+    // init empari material kit
+    initMaterial()
+
+    // init sliders
+    let noUiSlider = require('nouislider')
+    let slider = document.getElementById('sliderRegular')
+    noUiSlider.create(slider, {start: 50, connect: true, range: {min: 0, max: 100}})
+    slider.noUiSlider.on('update', (values, handle) => {
+      this.sliderTotal = values[0]
+    })
   }
+}
 </script>
 
 <style lang="scss">
@@ -1724,7 +1737,7 @@ $(&#39;[data-toggle=&quot;popover&quot;]&#39;).popover();
     }
   }
   .nav-align-center{
-    text-align: center;
+    text-align: center;          teste
 
     .nav-pills{
       display: inline-block;

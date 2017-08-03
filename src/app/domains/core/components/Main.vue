@@ -1,7 +1,7 @@
 <template lang="html">
   <div id="app">
     <router-view></router-view>
-    <footer class="footer navbar-fixed-bottom">
+    <footer class="footer ">
       <div class="container">
         <p class="text-muted text-center">
           {{ app.name }} &copy; {{ now.getFullYear() }} -

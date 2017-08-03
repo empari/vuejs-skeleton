@@ -14,6 +14,7 @@ const router = new VueRouter({
   hashbang: false,
   history: true,
   saveScrollPosition: true
+
 })
 
 router.afterEach(afterEach)

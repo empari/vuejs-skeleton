@@ -1653,6 +1653,7 @@ $(&#39;[data-toggle=&quot;popover&quot;]&#39;).popover();
       window.$('.datepicker').datepicker({
         format: 'dd/mm/yyyy'
       })
+//      window.$.material.init()
     }
   }
 </script>

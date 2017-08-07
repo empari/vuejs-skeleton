@@ -2,9 +2,9 @@
   <div class="container">
     <img src="static/images/core_logo.png" class="img-responsive text-center center-block" :alt="app.name">
     <div class="text-center">
-      <p>A new generation apps by <a href="http://www.empari.com.br">Empari Global Innovation</a></p>
-      <h3>Essencial links</h3>
-      <router-link :to="{ name: 'home.documentation-ux'}">Documentation UX</router-link>
+      <p>{{ $t("new_geneation") }}</p>
+      <h3>{{ $t("titles.essencial_links") }}</h3>
+      <router-link :to="{ name: 'home.documentation-ux'}">{{ $t("documentation_ux") }}</router-link>
     </div>
   </div>
 </template>
@@ -22,5 +22,5 @@ export default {
 }
 </script>
 
-<style lang="css">
+<style lang="scss">
 </style>

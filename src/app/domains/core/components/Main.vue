@@ -2,13 +2,11 @@
   <div id="app">
     <router-view></router-view>
     <footer class="footer ">
+      <h1>{{ $t("hello") }}</h1>
       <div class="container">
         <p class="text-muted text-center">
           {{ app.name }} &copy; {{ now.getFullYear() }} -
-          <small>
-            Desenvolvido com <i class="material-icons" style="font-size: 14px; color: red">favorite</i> por
-            <a href="http://www.empari.com.br" target="_blank">Empari Global Innovation</a>.
-          </small>
+          <small v-html="copy"></small>
         </p>
       </div>
     </footer>
@@ -23,6 +21,7 @@ export default {
   data () {
     return {
       app,
+      copy: this.$t('footer.copy'),
       now: new Date()
     }
   }

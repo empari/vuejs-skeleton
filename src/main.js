@@ -5,9 +5,8 @@ import { sync } from 'vuex-router-sync'
 import store from '@plugins/store'
 import router from '@plugins/router'
 import httpPlugin from '@plugins/http'
+import translate from '@plugins/translate'
 import Main from '@domains/core/components/Main'
-// import App from './App.vue'
-// import App from '@domains/core/components/Main'
 
 Vue.config.productionTip = false
 
@@ -22,6 +21,7 @@ sync(store, router) // https://github.com/vuejs/vuex-router-sync/tree/next
 new Vue({
   store,
   router,
+  translate,
   el: '#app',
   render: h => h(Main)
 })

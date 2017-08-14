@@ -2,17 +2,13 @@
 
 // load vue and vuex instance
 import Vue from 'vue'
-import Vuex from 'vuex'
+import store from '@plugins/store'
 
 // load vuex i18n module
 import vuexI18n from 'vuex-i18n'
 
 // load translates js
 import { translates as messages } from '@/app/domains'
-
-// initialize the vuex store using the vuex module. note that you can change the
-//  name of the module if you wish
-const store = new Vuex.Store()
 
 // initialize the internationalization plugin on the vue instance. note that
 // the store must be passed to the plugin. the plugin will then generate some

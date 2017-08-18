@@ -7,9 +7,22 @@ import router from '@plugins/router'
 import httpPlugin from '@plugins/http'
 import translate from '@plugins/translate'
 import Main from '@domains/core/components/Main'
+import initMaterial from '@plugins/material'
+import pluginAlert from '../package/egi-plugin-alert/src/index'
 
 Vue.config.productionTip = false
 
+const Material = {}
+Material.install = function (Vue, options) {
+  Vue.mixin({
+    mounted: () => {
+      initMaterial()
+    }
+  })
+}
+
+Vue.use(Material)
+Vue.use(pluginAlert)
 Vue.use(httpPlugin, {store, router})
 
 require('./vendor')

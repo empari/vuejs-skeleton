@@ -1,0 +1,61 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "egi-plugin-alert",
+        "scope": null,
+        "escapedName": "egi-plugin-alert",
+        "name": "egi-plugin-alert",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "P:\\CORE\\projects\\vuejs-skeleton\\package\\vuejs-auth"
+    ]
+  ],
+  "_from": "egi-plugin-alert@latest",
+  "_id": "egi-plugin-alert@0.1.3",
+  "_inCache": true,
+  "_location": "/egi-plugin-alert",
+  "_nodeVersion": "7.6.0",
+  "_npmUser": {},
+  "_npmVersion": "4.1.2",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "egi-plugin-alert",
+    "scope": null,
+    "escapedName": "egi-plugin-alert",
+    "name": "egi-plugin-alert",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "http://18.231.54.253:4873/egi-plugin-alert/-/egi-plugin-alert-0.1.3.tgz",
+  "_shasum": "6a6a4389b0bd92261c77cfc3af70bc07049a913b",
+  "_shrinkwrap": null,
+  "_spec": "egi-plugin-alert",
+  "_where": "P:\\CORE\\projects\\vuejs-skeleton\\package\\vuejs-auth",
+  "author": "",
+  "dependencies": {},
+  "description": "",
+  "devDependencies": {},
+  "directories": {
+    "example": "example"
+  },
+  "dist": {
+    "shasum": "6a6a4389b0bd92261c77cfc3af70bc07049a913b",
+    "tarball": "http://18.231.54.253:4873/egi-plugin-alert/-/egi-plugin-alert-0.1.3.tgz"
+  },
+  "license": "MIT",
+  "main": "src/index.js",
+  "name": "egi-plugin-alert",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.1.3"
+}

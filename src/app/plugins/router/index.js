@@ -3,10 +3,11 @@ import VueRouter from 'vue-router'
 import afterEach from './AfterEach'
 import beforeEach from './BeforeEach'
 import { routes as app } from '@/app/domains'
+import { routes as auth } from '../../../../package/vuejs-auth/src/index'
 
 Vue.use(VueRouter)
 
-const routes = [...app]
+const routes = [...app, ...auth]
 
 // import { routes as app } from '@/app/domains'
 

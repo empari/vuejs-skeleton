@@ -9,6 +9,7 @@ import vuexI18n from 'vuex-i18n'
 
 // load translates js
 import { translates as messages } from '@/app/domains'
+import { translates as transAuth } from '../../../../package/vuejs-auth/src/index'
 
 // initialize the internationalization plugin on the vue instance. note that
 // the store must be passed to the plugin. the plugin will then generate some
@@ -19,6 +20,8 @@ Vue.use(vuexI18n.plugin, store)
 // add translations directly to the application
 Vue.i18n.add('en', messages.en)
 Vue.i18n.add('ptBR', messages.ptBR)
+Vue.i18n.add('en', transAuth.en)
+Vue.i18n.add('ptBR', transAuth.ptBR)
 
 // set the start locale to use
 Vue.i18n.set(process.env.LOCALE)

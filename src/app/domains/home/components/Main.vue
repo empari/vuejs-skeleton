@@ -1,17 +1,13 @@
 <template lang="html">
-  <router-view></router-view>
+  <div>
+    <h1>Main Home</h1>
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
-import { app } from '@configs'
-
 export default {
-  name: 'HomeMain',
-  data () {
-    return {
-      app
-    }
-  }
+  name: 'HomeMain'
 }
 </script>
 
